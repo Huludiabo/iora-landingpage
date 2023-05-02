@@ -1,0 +1,9 @@
+/* src/styles/hide-fullpage-credit.css */
+.fp-slidesNav {
+    display: none !important;
+  }
+  
+.fp-watermark {
+    display: none !important;
+  }
+  

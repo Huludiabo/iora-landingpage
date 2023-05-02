@@ -1,0 +1,24 @@
+/* src/styles/fullpage-navigation.css */
+
+/* Customize the navigation bullets */
+#fp-nav ul li a span,
+#fp-nav ul li a:hover span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a span,
+.fp-slidesNav ul li a:hover span,
+.fp-slidesNav ul li a.active span
+.fp-slidesNav ul li a.focus span {
+  background: #5fd855;
+  width: 16px !important;
+  height: 16px !important;
+  margin: -20px -20px -20px -20px !important;
+  border-radius: 50%;
+}
+
+/* Customize the active bullet */
+#fp-nav ul li.active a span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: #5fd855;
+}
