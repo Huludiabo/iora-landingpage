@@ -15,16 +15,16 @@ export default function BioUrl() {
         const source = url.searchParams.get('utm_source');
         const medium = url.searchParams.get('utm_medium');
         const campaign = url.searchParams.get('utm_campaign');
-    
+
         if (source || medium || campaign) {
             trackEvent('Acquisition', 'Source', source || 'unknown');
             trackEvent('Acquisition', 'Medium', medium || 'unknown');
             trackEvent('Acquisition', 'Campaign', campaign || 'unknown');
         }
-    
+
         setIsMounted(true);
     }, []);
-    
+
 
     const links = [
         { label: 'Livro: Como Sobreviver e Ganhar Dinheiro em um Mundo Web3', url: 'https://a.co/d/6C6cUZs' },
@@ -44,13 +44,13 @@ export default function BioUrl() {
         <div>
             <NextSeo
                 title="ioralabs"
-                description="We are a team of blockchain enthusiasts with a passion for innovation and a drive to make a difference. Our mission is to create cutting-edge blockchain solutions that help businesses achieve their goals and transform industries."
+                description="Somos uma equipe de entusiastas de blockchain com paixão por inovação e determinação para fazer a diferença. Nossa missão é criar soluções de blockchain de ponta que ajudem as empresas a alcançar seus objetivos e transformar setores."
                 canonical="https://ioralabs.com/"
                 openGraph={{
                     url: 'https://ioralabs.com/',
                     title: 'ioralabs',
                     description:
-                        'We are a team of blockchain enthusiasts with a passion for innovation and a drive to make a difference. Our mission is to create cutting-edge blockchain solutions that help businesses achieve their goals and transform industries.',
+                        'Somos uma equipe de entusiastas de blockchain com paixão por inovação e determinação para fazer a diferença. Nossa missão é criar soluções de blockchain de ponta que ajudem as empresas a alcançar seus objetivos e transformar setores.',
                     images: [
                         {
                             url: 'https://ioralabs.com/assets/images/icons/iora.svg',
@@ -69,7 +69,7 @@ export default function BioUrl() {
             />
             <Head>
                 <title>ioralabs</title>
-                <meta name="description" content="Iora Labs is a blockchain development company focused on building custom blockchain solutions for businesses of all sizes. Contact us today to discuss your project." />
+                <meta name="description" content="A Iora Labs é uma empresa de desenvolvimento de blockchain focada na criação de soluções personalizadas para empresas de todos os tamanhos. Entre em contato conosco hoje para discutir seu projeto." />
                 <link rel="icon" href="/assets/images/icons/iora.png" />
             </Head>
 
@@ -79,10 +79,10 @@ export default function BioUrl() {
                         <Header isCentered />
                         <div className="youtube-video-container">
                             <iframe width="414" height="235"
-                            src="https://www.youtube.com/embed/l8rddXQTcsI?controls=0"
-                            title="Algo está para acontecer"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                src="https://www.youtube.com/embed/l8rddXQTcsI?controls=0"
+                                title="Algo está para acontecer"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <LinksList links={links} />
                     </>
