@@ -13,7 +13,6 @@ const LinksList = ({ links }) => {
     };
 
     return (
-        <StyledSectionLinkTree backgroundColor="#251525">
             <LinksListWrapper>
                 {links.map((link, index) => {
                     const LinkComponent = index === 0 ? FirstLinkItem : LinkItem;
@@ -30,7 +29,6 @@ const LinksList = ({ links }) => {
                     );
                 })}
             </LinksListWrapper>
-        </StyledSectionLinkTree>
     );
 };
 

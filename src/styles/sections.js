@@ -80,16 +80,22 @@ export const StyledSection = styled.div`
 export const StyledSectionLinkTree = styled.div`
   min-height: 100vh;
   padding: 2rem;
+  max-width: 514px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 4rem;
   background-color: ${(props) => props.backgroundColor};
   background-repeat: no-repeat;
   background-position: center;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
     align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: ${(props) => props.backgroundColor};
+    margin: auto;
   }
 `;

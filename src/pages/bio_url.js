@@ -6,6 +6,7 @@ import Loading from '@/components/Loading';
 import LinksList from '@/components/LinkList';
 import Header from '@/components/Header';
 import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { StyledSectionLinkTree } from '@/styles/sections';
 
 export default function BioUrl() {
     const [isMounted, setIsMounted] = useState(false);
@@ -68,24 +69,24 @@ export default function BioUrl() {
                 }}
             />
             <Head>
-                <title>ioralabs</title>
+                <title>ioralabs - links úteis</title>
                 <meta name="description" content="A Iora Labs é uma empresa de desenvolvimento de blockchain focada na criação de soluções personalizadas para empresas de todos os tamanhos. Entre em contato conosco hoje para discutir seu projeto." />
                 <link rel="icon" href="/assets/images/icons/iora.png" />
             </Head>
 
             <main>
                 {isMounted ?
-                    <>
+                     <StyledSectionLinkTree backgroundColor="#251525">
                         <Header isCentered />
                         <div className="youtube-video-container">
-                            <iframe width="414" height="235"
+                            <iframe width="380" height="215"
                                 src="https://www.youtube.com/embed/l8rddXQTcsI?controls=0"
                                 title="Algo está para acontecer"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <LinksList links={links} />
-                    </>
+                    </StyledSectionLinkTree>
                     : <Loading />}
             </main>
         </div>
