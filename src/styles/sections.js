@@ -76,3 +76,20 @@ export const StyledSection = styled.div`
   align-items: center;
   background-color: ${(props) => props.backgroundColor};
 `;
+
+export const StyledSectionLinkTree = styled.div`
+  min-height: 100vh;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 4rem;
+  background-color: ${(props) => props.backgroundColor};
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    align-items:center;
+  }
+`;
