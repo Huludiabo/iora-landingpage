@@ -29,7 +29,7 @@ export default function BioUrl() {
 
     const links = [
         { label: 'Livro: Como Sobreviver e Ganhar Dinheiro em um Mundo Web3', url: 'https://a.co/d/6C6cUZs' },
-        { label: 'Telegram', url: 'https://t.me/+gFCiQ27KTWI2MmEx', icon: <FaYoutube /> },
+        { label: 'Telegram: Relatório diário de tokens e lançamentos', url: 'https://t.me/+gFCiQ27KTWI2MmEx', icon: <FaYoutube /> },
         { label: 'Youtube', url: 'https://www.youtube.com/@ioralabs', icon: <FaYoutube /> },
         { label: 'Instagram', url: 'https://www.instagram.com/_pemagalhaes_/', icon: <FaInstagram /> },
         { label: 'Twitter', url: 'https://twitter.com/pemagalhaesrj', icon: <FaTwitter /> },
