@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo';
 import Loading from '@/components/Loading';
 import LinksList from '@/components/LinkList';
 import Header from '@/components/Header';
-import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube, FaTelegram } from 'react-icons/fa';
 import { StyledSectionLinkTree } from '@/styles/sections';
 
 export default function BioUrl() {
@@ -29,7 +29,8 @@ export default function BioUrl() {
 
     const links = [
         { label: 'Livro: Como Sobreviver e Ganhar Dinheiro em um Mundo Web3', url: 'https://a.co/d/6C6cUZs' },
-        { label: 'Telegram: Relatório diário de tokens e lançamentos', url: 'https://t.me/+gFCiQ27KTWI2MmEx', icon: <FaYoutube /> },
+        { label: 'Consultoria: Agende uma reunião!', url: 'https://calendly.com/pedrosgmagalhaes' },
+        { label: 'Telegram: Relatório diário de tokens e lançamentos', url: 'https://t.me/+gFCiQ27KTWI2MmEx', icon: <FaTelegram /> },
         { label: 'Youtube', url: 'https://www.youtube.com/@ioralabs', icon: <FaYoutube /> },
         { label: 'Instagram', url: 'https://www.instagram.com/_pemagalhaes_/', icon: <FaInstagram /> },
         { label: 'Twitter', url: 'https://twitter.com/pemagalhaesrj', icon: <FaTwitter /> },

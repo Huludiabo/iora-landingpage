@@ -1,6 +1,5 @@
 import { StyledSectionHeader } from '@/styles/sections';
 import Image from 'next/image';
-import pyramid from '/public/assets/images/pyramid.svg';
 import { Container, Title, Subtitle, Button, ButtonSection } from './styles';
 
 export default function Hero({ fullpageApi }) {
@@ -22,7 +21,7 @@ export default function Hero({ fullpageApi }) {
           </ButtonSection>
         </div>
         <div className="flex justify-start items-start">
-          <Image src={pyramid} alt="Pyramid" width={820} height={700} />
+          <Image src="/assets/images/pyramid.svg" alt="Pyramid" width={820} height={700} />
         </div>
       </Container>
     </StyledSectionHeader>

@@ -20,7 +20,7 @@ const FullPageSections = () => {
         return (
           <ReactFullpage.Wrapper ref={fullpageRef}>
             <div className="section">
-              <Header />
+              <Header isCentered={false} />
               <Hero fullpageApi={fullpageApi} />
             </div>
             <div className="section">

@@ -11,12 +11,12 @@ export default function Contact() {
         <h1>Let&apos;s Build the Future <span>Together</span></h1>
         <h3>Get in touch with us to discuss your project and explore how we can help you succeed in the world of blockchain.</h3>
         <div className="button-container">
-          <Link href="https://discord.gg/wjQAhe5qSB" target="_blank" rel="noopener noreferrer">
+          <Link href="https://wa.me/5511963926504" target="_blank" rel="noopener noreferrer">
             <Buttons>
-              <Image src="/assets/images/icons/discord.svg" width={40} height={40} alt="Discord" /> Open Discord
+              <Image src="/assets/images/icons/whatsapp.svg" width={40} height={40} alt="Discord" /> Open WhatAapp
             </Buttons>
           </Link>
-          <Link href="https://t.me/+Pdbe6ti-EE40ZmFh" target="_blank" rel="noopener noreferrer">
+          <Link href="https://t.me/pemagalhaesrj" target="_blank" rel="noopener noreferrer">
             <Buttons>
               <Image src="/assets/images/icons/telegram.svg" width={40} height={40} alt="Telegram" /> Open Telegram
             </Buttons>
