@@ -16,7 +16,6 @@ const LinksList = ({ links }) => {
             <LinksListWrapper>
                 {links.map((link, index) => {
                     const LinkComponent = index === 0 ? FirstLinkItem : LinkItem;
-
                     return (
                         <Link key={index} href={link.url} passHref>
                             <div onClick={() => handleClick(link.label, link.url)} target="_blank" rel="noopener noreferrer">

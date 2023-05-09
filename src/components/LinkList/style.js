@@ -18,15 +18,19 @@ export const LinksListWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  span {
+    padding: 8px;
+  }
 `;
 
 export const LinkItem = styled.button`
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 20px;
   background-color: transparent;
   color: #1db954;
   display: flex;
-  align-items: center; 
+  align-items: flex-start; 
   justify-content: space-evenly;
   padding: 1rem 2rem;
   border: 2px solid #1db954;
@@ -38,6 +42,7 @@ export const LinkItem = styled.button`
   font-family: 'Mina', sans-serif;
   font-weight: 700;
 
+
   &:hover {
     background-color: #1db954;
     color: #fff;
@@ -45,6 +50,8 @@ export const LinkItem = styled.button`
 `;
 
 export const FirstLinkItem = styled(LinkItem)`
+  margin-top: 20px;
   animation: ${bounce} 2s infinite;
   background-color: #fff;
+  font-size: 18px;
 `;
