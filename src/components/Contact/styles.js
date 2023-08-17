@@ -1,3 +1,4 @@
+// src/components/Contact/styles.js
 import styled from 'styled-components';
 
 export const StyledContact = styled.section`
@@ -95,4 +96,59 @@ export const Buttons = styled.a`
     padding: 1rem;
   }
 }
+`;
+
+export const StyledInput = styled.input`
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #0FFF97;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+
+  &:focus {
+    border-color: #9b78df;
+  }
+
+  &::placeholder {
+    color: #b5b5b5;
+  }
+`;
+
+export const StyledTextArea = styled.textarea`
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #0FFF97;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.3s ease-in-out;
+
+  &:focus {
+    border-color: #9b78df;
+  }
+
+  &::placeholder {
+    color: #b5b5b5;
+  }
+`;
+
+export const StyledButton = styled.button`
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #0FFF97;
+  color: #251525;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #9b78df;
+  }
 `;
