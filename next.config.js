@@ -2,6 +2,9 @@ const path = require('path');
 
 module.exports = {
   reactStrictMode: true,
+  images: {
+    unoptimized: true
+  },
   webpack(config, { dev, isServer }) {
     // Enable CSS modules and PostCSS
     config.module.rules.push({
