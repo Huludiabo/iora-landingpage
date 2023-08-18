@@ -98,7 +98,7 @@ export const Buttons = styled.a`
 }
 `;
 
-export const StyledInput = styled.input`
+export const StyledInput = styled.input.attrs({ refKey: 'ref' })`
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -107,6 +107,8 @@ export const StyledInput = styled.input`
   font-size: 1rem;
   outline: none;
   transition: border-color 0.3s ease-in-out;
+  color: #251525;
+  font-weight: 600;
 
   &:focus {
     border-color: #9b78df;
@@ -117,7 +119,7 @@ export const StyledInput = styled.input`
   }
 `;
 
-export const StyledTextArea = styled.textarea`
+export const StyledTextArea = styled.textarea.attrs({ refKey: 'ref' })`
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -141,14 +143,20 @@ export const StyledButton = styled.button`
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 8px;
-  background-color: #0FFF97;
+  background-color: #251525;
   color: #251525;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   font-weight: 600;
+  margin-top: 20px;
 
   &:hover {
     background-color: #9b78df;
+  }
+
+  &[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
 `;
