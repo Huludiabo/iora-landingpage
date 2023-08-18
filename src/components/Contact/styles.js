@@ -143,7 +143,7 @@ export const StyledButton = styled.button`
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 8px;
-  background-color: #0FFF97;
+  background-color: #251525;
   color: #251525;
   font-size: 1rem;
   cursor: pointer;
