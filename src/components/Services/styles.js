@@ -79,7 +79,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.span`
   font-family: 'Mina';
   font-style: normal;
   font-weight: 400;

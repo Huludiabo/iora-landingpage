@@ -1,3 +1,4 @@
+// src/pages/api/sendEmail.js
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
@@ -5,7 +6,17 @@ export default async function handler(req, res) {
         return res.status(405).end();
     }
 
-    const { email, name, message } = req.body;
+    const { email, name, message, captcha } = req.body;
+
+    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captcha}`;
+    const captchaResponse = await fetch(verifyUrl, {
+        method: "POST"
+    });
+    const captchaData = await captchaResponse.json();
+
+    if (!captchaData.success) {
+        return res.status(400).send("Captcha verification failed");
+    }
 
     const transporter = nodemailer.createTransport({
         host: process.env.AWS_SMTP_HOST,
