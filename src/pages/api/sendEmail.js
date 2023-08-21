@@ -6,7 +6,7 @@ export default async function handler(req, res) {
         return res.status(405).end();
     }
 
-    const { email, name, message, captcha } = req.body;
+    const { email, name, message, captcha, foundUs } = req.body;
 
     const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captcha}`;
     const captchaResponse = await fetch(verifyUrl, {
@@ -32,7 +32,12 @@ export default async function handler(req, res) {
             from: email,
             to: process.env.DESTINATION_EMAIL,
             subject: `New message from ${name}`,
-            text: message,
+            text: `
+            Name: ${name}
+            Email: ${email}
+            Found Us: ${foundUs}
+            Message: ${message}
+            `,
         });
 
         res.status(200).send('Email sent successfully');
