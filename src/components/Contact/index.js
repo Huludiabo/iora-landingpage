@@ -64,7 +64,7 @@ export default function Contact() {
           toast.success('Email sent successfully!');
           localStorage.setItem("lastSent", Date.now());
           setDisableSubmit(true);
-          setTimeout(() => setDisableSubmit(false), 1800000); // This will re-enable the button after 30 minutes
+          setTimeout(() => setDisableSubmit(false), 1800000);
         } else {
           console.error('Failed to send the email');
           toast.error('Failed to send the email.');

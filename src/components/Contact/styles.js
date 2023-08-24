@@ -129,9 +129,11 @@ export const StyledTextArea = styled.textarea.attrs({ refKey: 'ref' })`
   outline: none;
   resize: vertical;
   transition: border-color 0.3s ease-in-out;
+  color: #b5b5b5;
 
   &:focus {
     border-color: #9b78df;
+    color: #b5b5b5;
   }
 
   &::placeholder {
