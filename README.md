@@ -13,6 +13,8 @@ This is a project built with Next.js, a framework for React applications. It use
 ## Getting Started
 
 To get started, clone the repository and run the following commands:
+![image](https://github.com/Huludiabo/iora-landingpage/assets/85755581/dd1e4b49-06dd-489b-80a6-7ff077025a71)
+![image](https://github.com/Huludiabo/iora-landingpage/assets/85755581/f82eac23-cfa0-4d00-8482-823bec9a93a3)
 
 ```bash
 npm install
